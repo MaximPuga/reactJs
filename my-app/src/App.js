@@ -7,16 +7,13 @@ function Hui() {
 }
 function Show(){
 
-
-if(document.getElementById('H').style.display === 'block'){
-console.log(1)
-const block2 = document.getElementById('H').style.display = "none"
+let example=document.getElementById('H')
+if(example.style.display === 'block'){
+const block2= example.style.display = "none"
 }else{ 
-  const block1 = document.getElementById('H').style.display = "block"
+  const block1 = example.style.display = "block"
 }
 }
-
-
 
 function cube(){
   let a1=document.getElementById('1')
@@ -28,8 +25,23 @@ function cube(){
   let a7=document.getElementById('7')
   let a8=document.getElementById('8')
   let a9=document.getElementById('9')
-  console.log(getRandomInRange(1, 9))
+  let vegetables = [a1, a2, a3, a4, a5, a6, a7, a8, a9];
+  console.log(vegetables)
+
+ 
+
+  let randnub1=getRandomInRange(0, 8)
+  console.log(randnub1)
+
+  function Check(){
+    for(let i=0;i< vegetables.length;i++){
+      let c=vegetables[randnub1]
+      console.log(c)
+    }
+  }
+  console.log(Check())
 }
+
 function getRandomInRange(min, max) {
    return Math.floor(Math.random() * (max - min + 1)) + min;
  }
