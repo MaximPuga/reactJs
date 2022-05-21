@@ -42,3 +42,18 @@
   height: 50px;
   width: 50px;
 }
+.genDiv{
+  width: 150px;
+  height: 150px;
+  display: flex;
+}
+.bigDiv{
+  display: inline;
+}
+.lilDiv{
+  border-style: solid;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-color: black;
+}
