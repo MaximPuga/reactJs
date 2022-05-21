@@ -37,7 +37,9 @@ function cube(){
     for(let i=0;i< vegetables.length;i++){
       let c=vegetables[randnub1]
       console.log(c)
+      c.style.background = '#ffffff'
     }
+
   }
   console.log(Check())
 }
